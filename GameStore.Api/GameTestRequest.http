@@ -1,0 +1,30 @@
+GET http://localhost:5168/GetGames
+
+
+###
+GET http://localhost:5168/GetGameById/34
+
+
+###
+POST http://localhost:5168/InsertGame
+Content-Type: application/json
+
+{
+    "Name": "haha",
+    "GenreId": 3,
+    "Price": 55,
+    "ReleaseDate": "2000-01-03"
+
+}
+
+###
+DELETE http://localhost:5168/DeleteGame/haha 2
+
+
+###
+PUT http://localhost:5168/UpdateGame/2
+Content-Type: application/json
+
+{
+    "Name": "NFSP 2",
+}
